@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+.app{
+    padding: 20px;
+    margin: 0 auto;
+    background-color: lightgray;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+    text-align: center;
+    color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.products{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.product-card{
+    flex: 1 1 200px;
+    padding: 16px;
+    background: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.qty-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 8px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.qty-controls button{
+    padding: 4px 5px;
+}
+
+.add-btn{
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 7px 13px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-btn:hover{
+    background: #0056b3;
+}
+
+.progress-container{
+    margin: 4px 0;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 96vw;
+}
+
+.progress-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.progress-bar{
+    height: 20px;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progress{
+    height: 100%;
+    background: #28a745;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+
+.cart{
+    margin: 4px 0;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 96vw;
+}
+
+.cart h4{
+    text-align: center;
+}
+
+.cart p{
+    text-align: center;
+}
+
+.cart ul{
+    list-style: none;
+    padding: 0;
+}
+
+.cart li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-btns button{
+    margin-left: 8px;
+    margin-right: 4px;
+    padding: 4px 8px;
+}
+
+.gift-msg{
+    text-align: center;
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 16px
+}
+
+.btn1{
+    background: #28a745;
+    color: #fff;
+    border-radius: 3px;
+    border-width: 0px;
+    padding: 7px;
+}
+
+.btn2{
+    background: red;
+    color: #fff;
+    border-radius: 3px;
+    border-width: 0px;
+    padding: 7px;
 }
