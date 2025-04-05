@@ -65,11 +65,11 @@ const App = () => {
                         <h3>{product.name}</h3>
                         <p>${product.price}</p>
                         <div className='qty-controls'>
-                            <button className='btn2' onClick={() => setQuantities((prev) => ({
+                            <button onClick={() => setQuantities((prev) => ({
                                 ...prev, [product.id] : Math.max((prev[product.id] || 1) - 1, 1),
                             }))}>-</button>
                             <span>{quantities[product.id] || 1}</span>
-                            <button className='btn1' onClick={() => setQuantities((prev) => ({
+                            <button onClick={() => setQuantities((prev) => ({
                                 ...prev, [product.id] : (prev[product.id] || 1) + 1,
                             }))}>+</button>
                         </div>
